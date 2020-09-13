@@ -104,5 +104,13 @@ Using Docker with jenkins pipeline without code
 
 - Go to your jenkins dashboard and install the docker pipeline plugin
 
+#########################
+##Running command inside dockerimage using jenkinsfile
+##########################
 
+- running docker images using jenkinsfile
+
+- running your command in a temporary container using jenkinsfile pipeline
+
+- check the folder docker-jenkins for the jenkinsfile
 
