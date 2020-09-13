@@ -13,6 +13,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "inherits": "^2.0.3",
     "mocha": "^5.2.0",
     "ms": "^2.1.1"
   }
