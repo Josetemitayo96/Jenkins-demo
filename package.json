@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "npm install inherits && mocha",
     "start": "node index.js"
   },
   "author": "",
@@ -13,7 +13,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "inherits": "^2.0.3",
+    "inherits": "^2.0.4",
     "mocha": "^5.2.0",
     "ms": "^2.1.1"
   }
