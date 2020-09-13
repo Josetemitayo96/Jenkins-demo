@@ -13,7 +13,7 @@ node {
             sh 'npm install --only=dev'
             sh 'npm test'
         }
-        stage('docker build and push'){
+        stage('docker build/push'){
             docker.withRegistry('https://index.docker.io/v1/', 'dockerhub'){
                 def app = docker.build("tayo96/docker-node-app:${commit_id}", '.').push()
             }
