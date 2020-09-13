@@ -84,5 +84,21 @@ Using Docker with jenkins pipeline without code
 - build now
 
 
-#Description
+######################
+#jenkinspipeline
+######################
+
+-  Node: Influence on what jenkins worker node the job will be ran (here: any node, since we dont have a worker node or slave node)
+
+- def: to declare variable
+
+- stage: defines a building stage  preparation, test and docker build and publish stage
+
+- checkout scm : To clone our git repo
+
+- sh "git rev-parse --short HEAD > .git/commit-id": to give us the commit id and store it in a file (.git/commit-id)
+
+- nodejs(nodeJSInstallationName: 'nodejs'): allow us to run npm, using the tool 'nodejs' in our jenkins
+
+- docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') : Means doing something in docker with a standard registry 'https://index.docker.io/v1/' and login with 'dockerhub' credentials in our jenkins
 
