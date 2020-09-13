@@ -85,7 +85,7 @@ Using Docker with jenkins pipeline without code
 
 
 ######################
-#jenkinspipeline
+#jenkinspipeline for a node app and also to build and publish docker image
 ######################
 
 -  Node: Influence on what jenkins worker node the job will be ran (here: any node, since we dont have a worker node or slave node)
@@ -101,4 +101,8 @@ Using Docker with jenkins pipeline without code
 - nodejs(nodeJSInstallationName: 'nodejs'): allow us to run npm, using the tool 'nodejs' in our jenkins
 
 - docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') : Means doing something in docker with a standard registry 'https://index.docker.io/v1/' and login with 'dockerhub' credentials in our jenkins
+
+- Go to your jenkins dashboard and install the docker pipeline plugin
+
+
 
